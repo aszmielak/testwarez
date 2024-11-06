@@ -5,6 +5,8 @@ name: API-tests CI
 env: 
   SECRET_PASSWORD: ${{secrets.PASSWORD}}
 
+  
+
 on:
   push:
     branches: [ "main" ]
