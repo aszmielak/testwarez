@@ -38,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with: 
         name: artifacts
-        path: /mochawesome-report/
+        path: /home/runner/work/testwarez/testwarez/mochawesome-report
     - name: Download all workflow run artifacts
       uses: actions/download-artifact@v4
 
