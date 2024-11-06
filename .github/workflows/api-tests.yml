@@ -34,3 +34,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: archive production artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: tests
+        path: |
+        tests
