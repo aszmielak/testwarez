@@ -34,3 +34,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v4
+      with: 
+        name: artifacts
+        path: testwarez/testwarez/mochawesome-report/
+    - name: Download all workflow run artifacts
+      uses: actions/download-artifact@v4
+
