@@ -13,7 +13,7 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule: 
-    - cron "35 12,14,16 * * 1-5"
+    - cron: "35 12,14,16 * * 1-5"
 
 jobs:
   build:
